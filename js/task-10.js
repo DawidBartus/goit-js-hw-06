@@ -22,5 +22,11 @@ const createBoxes = () => {
     alert("You don't pay me enough for this.");
   }
 };
+const destroy = () => {
+  while (divBox.firstChild) {
+    divBox.removeChild(divBox.firstChild);
+  }
+};
 
 btnCreate.addEventListener("click", createBoxes);
+btnDestroy.addEventListener("click", destroy);
