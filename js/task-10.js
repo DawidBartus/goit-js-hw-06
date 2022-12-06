@@ -12,8 +12,9 @@ const createBoxes = () => {
   if (amount <= 100) {
     for (let i = 0; i < input.value; i++) {
       const newDiv = document.createElement("div");
-      newDiv.style.width = 30 + 10 * i + "px";
-      newDiv.style.height = 30 + 10 * i + "px";
+      let size = 30 + 10 * i;
+      newDiv.style.width = size + "px";
+      newDiv.style.height = size + "px";
       newDiv.style.backgroundColor = getRandomHexColor();
       divBox.append(newDiv);
     }
