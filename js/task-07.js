@@ -6,4 +6,4 @@ const getValue = () => {
   text.style.fontSize = fontSize.value + "px";
 };
 
-fontSize.addEventListener("mousemove", getValue);
+fontSize.addEventListener("input", getValue);

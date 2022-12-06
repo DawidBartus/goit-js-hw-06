@@ -11,7 +11,7 @@ const list = document.querySelector("#ingredients");
 
 for (const ingridient of ingredients) {
   let listElement = document.createElement("li");
+  listElement.classList.add("item");
   listElement.textContent = ingridient;
-  listElement.classList = ingridient;
   list.append(listElement);
 }
